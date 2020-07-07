@@ -3,81 +3,220 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+	<link type="text/css" rel="stylesheet"
+		href="C:\Users\baise\Documents\web-dev\portfolio\assets\stylesheets\reset.css">
+	<link type="text/css" rel="stylesheet"
+		href="C:\Users\baise\Documents\web-dev\portfolio\assets\stylesheets\layout.css">
+	<link type="text/css" rel="stylesheet"
+		href="C:\Users\baise\Documents\web-dev\portfolio\assets\stylesheets\styles.css">
+	<link type="text/css" rel="stylesheet"
+		href="C:\Users\baise\Documents\web-dev\portfolio\assets\stylesheets\responsive.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<title>DoserCoder</title>
 </head>
 
 <body>
+	<header id="page-header">
+		<div class="logo-block" id="header-logo">
+			<span class="logo">j.simon</span>
+			<span class="logo-subtext">Web designer</span>
+
+			<div class="dots">
+				<div class="dot cyan-dot"></div>
+				<div class="dot red-dot"></div>
+				<div class="dot cyan-dot"></div>
+			</div>
+		</div>
+
+
+
+		<nav id="main-nav">
+			<a href="#projects" class="nav-link">Projects</a>
+			<a href="#connect" class="nav-link">Connect</a>
+		</nav>
+	</header>
 	<div id="grid">
-		<header>
+		<section class="vh-section" id="welcome">
+			<div id="welcome-cols">
+				<article class="welcome-col">
+					<div class="welcome-col-circle"></div>
+					<header class="welcome-col-header">
+						<h3>Web designer</h3>
+					</header>
+					<p class="welcome-col-text">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est </p>
+				</article>
 
-			<div id="page-title">
-				<h2 class="title-logo">DoserCoder</h2>
-				<p id="title-logo-subtext">Web developer. Web design.</p>
+				<article class="welcome-col">
+					<div class="welcome-col-circle"></div>
+					<header class="welcome-col-header">
+						<h3>Web developer</h3>
+					</header>
+					<p class="welcome-col-text">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+						dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est </p>
+				</article>
 			</div>
-			<nav id="navbar">
-				<a href="#projects" class="nav-link"><button type="button">Projects</button></a>
-				<a href="#profile-link" class="nav-link"><button type="button">Contact</button></a>
-			</nav>
-		</header>
-
-		<section id="welcome-section">
-			<h1>Welcome to my portfolio</h1>
-			<p id="welcome-text">
-				Welcome to my page.
-				Best designs ever.
-				You really should hire me.</p>
 		</section>
 
-		<section id="projects">
+		<section class="vh-section" id="projects">
+			<header class="vh-section-title" id="projects-header">
+				<h2>Projects</h2>
+
+				<div class="dots" id="projects-dots">
+					<div class="dot cyan-dot"></div>
+					<div class="dot red-dot"></div>
+					<div class="dot cyan-dot"></div>
+				</div>
+			</header>
+
 			<div id="projects-flex">
-				<div id="tribute_page-tile" class="project-tile">
-					<img src="assets/tributePage-photo.png" alt="Tribute Page">
-					<div class="project-tile-title">
-						<a href="https://codepen.io/dosercoder/full/ZEbdKJy" target="_blank"><button
-								type="button">Tribute Page</button></a>
+				<article class="project-tile" id="tribute_page-tile">
+					<div class="project-thumb" id="tribute_page-thumb"></div>
+					<div class="project-title-flex">
+						<header class="project-title">
+							<h4>Tribute Page</h4>
+						</header>
+						<span class="project-title-link"><a href="https://codepen.io/dosercoder/full/ZEbdKJy"
+								target="_blank" class="fa fa-external-link fa-2x" alt="Link to project"></a></span>
 					</div>
-				</div>
+					<section class="project-summary">
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+							invidunt ut labore et dolore magna aliquyam erat, sed diam.
+						</p>
+					</section>
+				</article>
 
-				<div id="survey_form-tile" class="project-tile">
-					<img src="assets/surveyForm-photo.png" alt="Survey Form">
-					<div class="project-tile-title">
-						<a href="https://codepen.io/dosercoder/full/QWybqLa" target="_blank"><button
-								type="button">Survey Form</button></a>
-					</div>
-				</div>
+				<article class="project-tile" id="survey_form-tile">
+					<div class="project-thumb" id="survey_form-thumb"></div>
 
-				<div id="landing_page-tile" class="project-tile">
-					<img src="assets/landingPage-photo.png"
-						alt="Product Landing Page">
-					<div class="project-tile-title">
-						<a href="https://codepen.io/dosercoder/full/jOWEgLw" target="_blank"><button
-								type="button">Product Landing Page</button></a>
+					<div class="project-title-flex">
+						<header class="project-title">
+							<h4>Survey Form</h4>
+						</header>
+						<span><a href="https://codepen.io/dosercoder/full/QWybqLa" target="_blank"
+								class="project-title-link fa fa-external-link fa-2x" alt="Link to project"></a></span>
 					</div>
-				</div>
+					<section class="project-summary">
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+							invidunt ut labore et dolore magna aliquyam erat, sed diam.
+						</p>
+					</section>
+				</article>
 
-				<div id="technical_page-tile" class="project-tile">
-					<img src="assets/technicalPage-photo.png" alt="Technical Page">
-					<div class="project-tile-title">
-						<a href="https://codepen.io/dosercoder/full/RwrRgqp" target="_blank"><button
-								type="button">Technical Page</button></a>
+				<article class="project-tile" id="landing_page-tile">
+					<div class="project-thumb" id="landing_page-thumb"></div>
+
+					<div class="project-title-flex">
+						<header class="project-title">
+							<h4>Product Landing Page</h4>
+						</header>
+						<span><a href="https://codepen.io/dosercoder/full/jOWEgLw" target="_blank"
+								class="project-title-link fa fa-external-link fa-2x" alt="Link to project"></a></span>
 					</div>
-				</div>
+
+					<section class="project-summary">
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+							invidunt ut labore et dolore magna aliquyam erat, sed diam.
+						</p>
+					</section>
+				</article>
+
+				<article class="project-tile" id="technical_page-tile">
+					<div class="project-thumb" id="technical_page-thumb"></div>
+
+					<div class="project-title-flex">
+						<header class="project-title">
+							<h4>Technical Page</h4>
+						</header>
+						<span><a href="https://codepen.io/dosercoder/full/RwrRgqp" target="_blank"
+								class="project-title-link fa fa-external-link fa-2x" alt="Link to project"></a></span>
+					</div>
+
+					<section class="project-summary">
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+							invidunt ut labore et dolore magna aliquyam erat, sed diam.
+						</p>
+					</section>
+				</article>
 			</div>
 		</section>
 
-		<section id="contact-links">
-			<p>Find more of my work at the following:</p>
-			<a href="https://github.com/dosercoder" id="profile-link" target="_blank"><button
-					type="button">GitHub</button></a>
+		<section class="vh-section" id="connect">
+			<header class="vh-section-title" id="connect-header">
+				<h2>Connect with me</h2>
+
+				<div class="dots" id="projects-dots">
+					<div class="dot cyan-dot"></div>
+					<div class="dot red-dot"></div>
+					<div class="dot cyan-dot"></div>
+				</div>
+			</header>
+			<div id="connect-flex">
+				<article class="connect-col">
+					<header class="connect-col-header">
+						<h3>Find me on the following:</h3>
+					</header>
+
+					<article class="connect-link">
+						<a href="https://github.com/dosercoder" class="fa fa-github fa-5x" alt="GitHub"
+							target="_blank"></a>
+					</article>
+				</article>
+
+				<article class="connect-col" id="connect-enquiry-col">
+					<header class="connect-col-header">
+						<h3>Any enquiries?</h3>
+						<span id="connect-form-subtitle">Please fill out form</span>
+					</header>
+
+
+					<form id="connect-form">
+						<label for="name">Name</label>
+						<input id="name" type="text" name="name" placeholder="Name">
+						<label for="email">Email</label>
+						<input id="email" type="email" name="email" placeholder="Email">
+						<label for="message">Message</label>
+						<textarea id="message" rows="5" placeholder="Write enquiry here"></textarea>
+						<button type="submit">Send</button>
+					</form>
+				</article>
+			</div>
 		</section>
 
-		<footer>
-			<div id="footer-title">
-				<p class="title-logo">DoserCoder</p>
+		<footer id="page-footer">
+			<div id="footer-main">
+				<div class="logo-block" id="footer-logo">
+					<span class="logo">j.simon</span>
+					<span class="logo-subtext">Web designer</span>
+				</div>
+
+				<nav id="footer-nav">
+					<div class="footer-nav-col">
+						<h5>Navigation</h5>
+						<ul>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#connect">Connect</a></li>
+						</ul>
+					</div>
+					<div class="footer-nav-col">
+						<h5>Connect</h5>
+						<ul>
+							<li><a href="https://github.com/dosercoder" target="_blank">GitHub</a></li>
+						</ul>
+					</div>
+				</nav>
 			</div>
+
 			<div id="footer-details">
-				<small>DoserCoder 2020</small>
+				<small>j.simon • web designer © 2020</small>
 			</div>
 		</footer>
 	</div>
