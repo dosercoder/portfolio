@@ -1,0 +1,116 @@
+@media (max-width:1024px) { /*landscape tablet*/
+    .project-tile {
+        width:100%;
+    }
+
+    #projects-flex {
+        width:;
+    }
+
+    #connect-flex {
+        width:70%;
+    }
+
+    #page-footer {
+        height:30vh;
+        padding-top: 10%;
+    }
+
+}
+
+@media (max-width:836px) { /*portrait tablet*/
+    #welcome-cols {
+        padding-top: 20vh;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .welcome-col {
+        width:72%;
+    }
+
+    #connect-flex {
+        width:100%;
+    }
+
+    #footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-nav {
+        margin-top: 2em;
+    }
+
+}
+
+@media (max-width:500px) {
+    #page-header {
+        flex-direction: column;
+        align-items: center;
+        height:14vh;
+    }
+
+    #main-nav {
+        align-self: center;
+    }
+
+    .vh-section {
+        padding-left: 7vw;
+        padding-right: 7vw; 
+    }
+
+    .project-tile {
+        height:50vh;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    #page-header {
+        height:12vh;
+    }
+
+    #welcome-cols {
+        padding-top: 12vh;
+    }
+
+    .project-tile {
+        height:40vh;
+    }
+
+    #page-footer {
+        padding-top:15%
+    }
+
+    /*type resizing*/
+    body {
+        font-size:0.83rem;
+    }
+
+    h3 {/*thin type*/
+        font-size: 1.72rem;
+    }
+    
+    .welcome-col-text {
+        font-size: 1rem;
+    }
+
+    h2,
+    .logo { /*vh-section-title*/
+        font-size: 2.07rem;
+    }
+
+    h4 {/*project title*/
+        font-size: 1.44rem;
+    }
+
+    h5,
+    .logo-subtext,
+    .nav-link,
+    #connect-form label {
+        font-size:0.83rem;
+    }
+    
+}
