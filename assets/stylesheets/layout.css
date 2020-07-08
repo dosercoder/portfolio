@@ -150,25 +150,25 @@
 }
 
 #tribute_page-thumb {
-    background-image: url(assets\images\tributePage-photo.png);
+    background-image: url(portfolio/assets/images/tributePage-photo.png);
     background-size: 100%;
     background-position-y: center;
 }
 
 #survey_form-thumb {
-    background-image: url(assets\images\surveyForm-photo.png);
+    background-image: url(assets/images/surveyForm-photo.png);
     background-size: 100%;
     background-position-y: center;
 }
 
 #landing_page-thumb {
-    background-image: url(assets\images\landingPage-photo.png);
+    background-image: url(assets/images/landingPage-photo.png);
     background-size: 100%;
     background-position-y: center;
 }
 
 #technical_page-thumb {
-    background-image: url(assets\images\technicalPage-photo.png);
+    background-image: url(assets/images/technicalPage-photo.png);
     background-size: 100%;
     background-position-y: center;
 }
