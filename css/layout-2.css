@@ -1,0 +1,525 @@
+/*mobile portrait default*/ 
+    /*general type*/
+body, a, input, textarea {/*resets default*/
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:rgb(75,80,80);
+    text-decoration: none;
+    }
+
+small {
+    font-size: 0.69em;
+}
+
+.fa-bigx {
+    font-size:4.3em;
+}
+
+.fa:hover {
+    color: rgb(238,110,71);
+    transition:color 0.2s linear;
+}
+
+h1 {
+    font-size: 4.3em;
+}    
+
+h2,
+.logo { /*vh-section-title*/
+    font-size: 2.07em;
+    font-family: 'Roboto Slab', serif;
+    font-weight:600;
+}
+
+h3 { /*welcome-connect-col-titles*/
+    font-size: 1.72em;
+    font-weight: 100;
+    letter-spacing: 0.2em; 
+}
+
+h4 {/*project title*/
+    font-size: 1.72em;
+    font-weight: 600;
+}
+
+h5,
+.logo-subtext,
+.nav-link,
+#connect-form label {
+    font-size:0.83em;
+    text-transform: uppercase;
+}
+
+
+
+  /*header*/
+#page-header,
+#header-logo,
+#main-nav {
+    display:flex;
+}
+
+#page-header {
+    width:100%;
+    min-height:12vh;
+    position:fixed;
+    top:0;
+    z-index:1;
+    box-sizing: border-box;
+    padding-top:2%;
+    padding-bottom: 2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(7,6,6,0.5);
+}
+
+    /*nav*/
+#main-nav {
+    width:auto;
+    align-self: center;
+    justify-content: space-between;
+    padding-top:1%;
+}
+
+.nav-link:first-of-type {
+    margin-right:3em;
+}
+
+    /*logo*/
+.logo-block {
+    width:auto;
+    flex-direction: column;
+    text-align: right;   
+}
+
+.logo {
+    line-height: 0.8em;
+}
+                    
+.logo-block span {
+    display:block;
+}
+                    
+.logo-subtext {
+    margin-top:0.2em;
+    margin-bottom:0.5em;
+    font-size: 0.69em;
+}
+
+    /*3 dots*/
+.dots {
+    width:100px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+                        
+.dot {
+    width:15px;
+    height:15px;
+    border-radius:50px;
+    display:inline-block;
+        }
+
+.cyan-dot {
+    background-color: rgb(159,228,196);
+}
+                        
+.red-dot {
+    background-color: rgb(238,110,71);
+}
+
+        
+    /*page layout*/
+#page-header,
+.vh-section,
+#page-footer {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+#grid {
+    margin-top:12vh;
+    display:grid;
+    grid-template:repeat(4,auto)/100vw;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#projects,
+#connect {
+    padding-top:15%;
+    padding-bottom: 15%; /*for gradient background - might not need*/
+}
+
+.vh-section-title {
+    text-align: center;
+}
+
+.vh-section-title h2 { /*for dots margin*/
+    margin-bottom: 18px;
+}
+
+  /*welcome bit*/
+  #welcome {
+    grid-area:1/1/2/2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#welcome-header {
+    padding-top:12vw;
+    padding-bottom: 12vw;
+    text-align: center;
+}
+
+#welcome-wrapper {
+    width:100%;
+    height: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.welcome-col {
+    width:82%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-col-header,
+.welcome-col-text {
+    margin-top: 5%;
+    text-align: center;   
+}
+
+.welcome-col-text {
+    font-size: 1.2em;
+    line-height: 1.44em;
+}
+
+ /*project bit*/
+#projects {
+    
+    grid-area:2/1/3/2;
+}
+
+#projects-flex {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tile {
+    width:100%;
+    height:200px;
+    background-color: ;
+    padding:0;
+    margin-top: 13.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-thumb {
+    height:80%;
+    border:1px solid rgb(75,80,80);
+}
+
+#tribute_page-thumb {
+    background-image: url(file:///C:/Users/baise/Documents/web-dev/portfolio/assets/images/tributePage-photo.png);
+    background-size: 100%;
+    background-position-y: center;
+}
+
+#survey_form-thumb {
+    background-image: url(file:///C:/Users/baise/Documents/web-dev/portfolio/assets/images/surveyForm-photo.png);
+    background-size: 100%;
+    background-position-y: center;
+}
+
+#landing_page-thumb {
+    background-image: url(file:///C:/Users/baise/Documents/web-dev/portfolio/assets/images/landingPage-photo.png);
+    background-size: 100%;
+    background-position-y: center;
+}
+
+#technical_page-thumb {
+    background-image: url(file:///C:/Users/baise/Documents/web-dev/portfolio/assets/images/technicalPage-photo.png);
+    background-size: 100%;
+    background-position-y: center;
+}
+
+.project-title-flex {
+    width:100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.project-title-link {
+    margin-left:1em;
+}
+
+.project-title-flex,
+.project-summary {
+    text-align: center;
+}
+
+.project-summary {
+    line-height: 1.44em;
+    display:none;
+  }
+
+    /*connect bit*/
+#connect {
+    grid-area:3/1/4/2;
+}
+
+
+#connect-flex {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-col {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-col-header {
+    margin-top: 5em;
+    text-align: center;
+}
+
+.connect-link { /*left, social links*/
+    align-items: center;
+    width:auto;
+    margin-top: 2.48em;
+    text-align: center;
+    font-size:200%; /*icon size*/
+}
+
+
+#connect-form {
+    width:100%;
+    margin-top: 3.58em;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#connect-form-subtitle {
+    display: block;
+    font-size:1em;
+    margin-top: 1em;
+}
+
+#connect-form input,
+#connect-form textarea {
+    width:100%;
+    margin-top: 0.83em;
+    margin-bottom: 2.98em;
+    padding-left: 1em;
+    border-radius: 15px;
+    border:1px solid rgba(7,6,6,0.5);
+}
+
+#connect-form input {
+    height:5em;
+}
+
+#connect-form textarea {
+    height:180px;
+    padding:1em;
+}
+
+#connect-form button {
+    width:100%;
+    height:2em;
+    border-radius: 10px;
+    background-color: rgba(75,80,80);
+    transition:all 0.2s linear;
+    border:none;
+    color:white;
+    font-size: 1.5em;
+}
+
+#connect-form button:hover {
+    background-color: rgb(238,110,71);
+}
+
+ /*footer*/
+ #page-footer {
+    background-color:rgb(159,228,196);
+    grid-area:4/1/5/2;
+    height:20vh;
+    padding-top: 1.44em;
+    padding-bottom: 1.44em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer-main,
+#footer-details {
+    width:100%;
+    
+}
+            /*top half of footer*/
+#footer-main,
+#footer-nav {   
+    display:flex;
+}
+
+
+#footer-main {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#footer-logo {
+    font-size: 70%;
+}
+
+#footer-nav {
+    width:auto;
+    margin-top: 1.44em;
+}
+
+.footer-nav-col {
+    text-align: center;
+    line-height: 1.25em;
+}
+
+.footer-nav-col:first-of-type {
+    margin-right: 3em;
+}
+
+
+.footer-nav-col ul {
+    margin:0;
+    list-style-type:none;
+    padding-left:0;
+}
+
+#footer-details {
+    text-align: center;
+}
+
+
+
+
+@media all and (max-width:845px) and (orientation:landscape) {
+    /*mobile in landscape*/
+
+    #page-header {
+        height: auto;
+        flex-direction: row-reverse;
+    }
+
+    #page-header.dots {
+        display: none;
+    }
+
+    .logo-block {
+        font-size: 80%;
+    }
+
+    .welcome-col {
+        width:100%;
+    }
+
+    .project-tile {
+        height: 100px;
+    }
+
+    #page-footer {
+        height: auto;
+    }
+
+    #footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media all and (min-width:668px) and (max-width:1024px) {
+    /*portrait tablets*/
+
+    #welcome-wrapper {
+        width:80%;
+        margin:0 auto;
+    }
+
+    .project-tile {
+        height:300px;
+    }
+
+    .project-thumb {
+        height: 95%;
+    }
+}
+
+@media all and (min-width:1024px) {
+    /*monitors*/
+    #page-header {
+        flex-direction: row-reverse;
+    }
+
+     
+    #welcome-wrapper {
+        flex-direction: row;
+    }
+
+    .welcome-col {
+        width:42%;
+    }
+
+    #projects-flex {
+        width:70%;
+        margin:0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+    
+      .project-tile {
+        width:49%;
+        height:380px;
+          
+      }
+
+    #connect-flex {
+        width:70%;
+        margin:0 auto;
+    }
+
+    .connect-col {
+        width:40%;
+    }
+        
+    #connect-enquiry-col { /*right side, enquiry form*/
+        width:80%;
+    }
+    
+    #footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer-logo {
+        font-size: 100%;
+    }
+}
